@@ -3,7 +3,7 @@
  * To self-host them instead: download the files into /public/images
  * and change BASE to "/images".
  */
-const BASE = "https://tis.edu.in/_next/static/media";
+const BASE = "/images";
 
 export const asset = (file: string) => `${BASE}/${encodeURIComponent(file)}`;
 
