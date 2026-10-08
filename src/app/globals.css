@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme tokens: space-separated RGB channels so Tailwind opacity modifiers work. */
+:root {
+  --bg: 244 246 250;
+  --surface: 255 255 255;
+  --ink: 14 26 51;
+  --muted: 85 97 122;
+  --line: 217 223 234;
+  --brand: 20 41 92;
+  --accent: 246 180 0;
+}
+
+.dark {
+  --bg: 10 17 36;
+  --surface: 17 27 54;
+  --ink: 238 242 250;
+  --muted: 154 168 196;
+  --line: 34 48 79;
+  --brand: 24 46 104;
+  --accent: 246 180 0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-bg font-sans text-ink antialiased transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-accent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer utilities {
+  /* Marquee pauses on hover and stops entirely for reduced-motion users. */
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+    }
+  }
+}
