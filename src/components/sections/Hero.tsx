@@ -29,7 +29,7 @@ export default function Hero() {
     <section ref={ref} id="top" className="relative overflow-hidden pt-28 sm:pt-32">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.1fr_1fr] lg:pb-24">
         <div>
-          <h1 className="text-[clamp(2.6rem,7.2vw,5.6rem)] font-bold leading-[0.98] tracking-tight">
+          <h1 aria-label="Welcome to Tulas International School (TIS)" className="text-[clamp(2.6rem,7.2vw,5.6rem)] font-bold leading-[0.98] tracking-tight">
             {headline.map((word, index) => (
               <span key={word} className="mr-[0.25em] inline-block overflow-hidden align-top pb-1">
                 <motion.span

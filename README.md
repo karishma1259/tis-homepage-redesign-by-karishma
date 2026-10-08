@@ -3,8 +3,8 @@
 A modern, animated redesign of the Tulas International School homepage focusing on high conversion, fluid animations, and mobile responsiveness. Brand colours (yellow accent, navy) and the school's copy and images are retained from [tis.edu.in](https://tis.edu.in/).
 
 ## 🚀 Live Demo
-- **Live URL:** [Insert Vercel Link Here]
-- **Repository:** [Insert GitHub Repo Link Here]
+- **Live URL:** https://tis-homepage-redesign-by-karishma.vercel.app
+- **Repository:** https://github.com/karishma1259/tis-homepage-redesign-by-karishma
 
 ## 🛠️ Tech Stack
 - **Framework:** Next.js 15 (App Router) + React 19 + TypeScript
@@ -27,8 +27,8 @@ Also included: staggered hero headline, self-drawing underline, parallax photo c
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/tis-homepage-redesign.git
-   cd tis-homepage-redesign
+   git clone https://github.com/karishma1259/tis-homepage-redesign-by-karishma.git
+   cd tis-homepage-redesign-by-karishma
    ```
 2. **Install dependencies:**
    ```bash
@@ -54,5 +54,5 @@ Production check: `npm run build && npm start`
 Yellow and navy palette, "Let's do it with Tulas" tagline, sports list, rankings, personalities, awards, parent reviews, collaborations and contact details from tis.edu.in.
 
 ## 📝 Notes
-- Images are loaded from tis.edu.in (see `src/data/assets.ts`). To self-host, download them into `public/images` and change `BASE` to `"/images"`.
+- Images are self-hosted in `public/images` (downloaded from tis.edu.in with `scripts/download-images.mjs`).
 - The enquiry form is front-end only (validation + success state); there is no backend or OTP step.
